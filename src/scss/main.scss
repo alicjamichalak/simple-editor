@@ -31,12 +31,20 @@ body {
     border: 1px solid #A1A4B1;
     border-radius: 4px;
   }
+  &__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 16px;
+  }
 }
 
 .button{
   background:blue;
-  border-radius: 5px;
+  padding: 9px;
+  border: 1px solid #A1A4B1;
   &--save{
     background: green;
+    margin-left: 10px;
   }
 }
