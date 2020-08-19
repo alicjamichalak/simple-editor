@@ -1,13 +1,42 @@
 @import "~normalize.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 @import "_variables";
-@import "modules/hello.scss";
 
 body {
   background: $wtf;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Open Sans';
+}
+
+.editor{
+  width: 100%;
+  max-width: 736px;
+  &__header{
+    font-size: 44px;
+    margin: 0 0 40px;
+  }
+}
+
+.form {
+  &__textarea{
+    width: 100%;
+    min-height: 240px;
+    padding: 16px;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+  }
+}
+
+.button{
+  background:blue;
+  border-radius: 5px;
+  &--save{
+    background: green;
+  }
 }
